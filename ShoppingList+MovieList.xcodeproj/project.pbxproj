@@ -16,6 +16,9 @@
 		55674BDB2A7509C300FD0AB7 /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55674BDA2A7509C300FD0AB7 /* ShoppingListTableViewController.swift */; };
 		55674BDD2A75108C00FD0AB7 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55674BDC2A75108C00FD0AB7 /* ShoppingList.swift */; };
 		55674BDF2A75132000FD0AB7 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55674BDE2A75132000FD0AB7 /* UserDefault.swift */; };
+		55674BE32A7574FF00FD0AB7 /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55674BE22A7574FF00FD0AB7 /* MovieInfo.swift */; };
+		55674BE62A75753C00FD0AB7 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55674BE52A75753C00FD0AB7 /* MovieListTableViewController.swift */; };
+		55674BE82A75755200FD0AB7 /* MovieListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55674BE72A75755200FD0AB7 /* MovieListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		55674BDA2A7509C300FD0AB7 /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
 		55674BDC2A75108C00FD0AB7 /* ShoppingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
 		55674BDE2A75132000FD0AB7 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		55674BE22A7574FF00FD0AB7 /* MovieInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
+		55674BE52A75753C00FD0AB7 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
+		55674BE72A75755200FD0AB7 /* MovieListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +68,45 @@
 		55674BC32A75029100FD0AB7 /* ShoppingList+MovieList */ = {
 			isa = PBXGroup;
 			children = (
+				55674BCD2A75029300FD0AB7 /* Assets.xcassets */,
+				55674BD22A75029300FD0AB7 /* Info.plist */,
+				55674BE02A75725E00FD0AB7 /* App */,
+				55674BE42A75750700FD0AB7 /* Movie */,
+				55674BE12A75727100FD0AB7 /* Shopping */,
+			);
+			path = "ShoppingList+MovieList";
+			sourceTree = "<group>";
+		};
+		55674BE02A75725E00FD0AB7 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				55674BC42A75029100FD0AB7 /* AppDelegate.swift */,
 				55674BC62A75029100FD0AB7 /* SceneDelegate.swift */,
 				55674BCA2A75029100FD0AB7 /* Main.storyboard */,
-				55674BCD2A75029300FD0AB7 /* Assets.xcassets */,
 				55674BCF2A75029300FD0AB7 /* LaunchScreen.storyboard */,
-				55674BD22A75029300FD0AB7 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		55674BE12A75727100FD0AB7 /* Shopping */ = {
+			isa = PBXGroup;
+			children = (
 				55674BD82A75090D00FD0AB7 /* ShoppingListTableViewCell.swift */,
 				55674BDA2A7509C300FD0AB7 /* ShoppingListTableViewController.swift */,
 				55674BDC2A75108C00FD0AB7 /* ShoppingList.swift */,
 				55674BDE2A75132000FD0AB7 /* UserDefault.swift */,
 			);
-			path = "ShoppingList+MovieList";
+			path = Shopping;
+			sourceTree = "<group>";
+		};
+		55674BE42A75750700FD0AB7 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				55674BE22A7574FF00FD0AB7 /* MovieInfo.swift */,
+				55674BE52A75753C00FD0AB7 /* MovieListTableViewController.swift */,
+				55674BE72A75755200FD0AB7 /* MovieListTableViewCell.swift */,
+			);
+			path = Movie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,11 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55674BE62A75753C00FD0AB7 /* MovieListTableViewController.swift in Sources */,
+				55674BE32A7574FF00FD0AB7 /* MovieInfo.swift in Sources */,
 				55674BD92A75090D00FD0AB7 /* ShoppingListTableViewCell.swift in Sources */,
 				55674BC52A75029100FD0AB7 /* AppDelegate.swift in Sources */,
 				55674BDF2A75132000FD0AB7 /* UserDefault.swift in Sources */,
 				55674BDD2A75108C00FD0AB7 /* ShoppingList.swift in Sources */,
 				55674BC72A75029100FD0AB7 /* SceneDelegate.swift in Sources */,
+				55674BE82A75755200FD0AB7 /* MovieListTableViewCell.swift in Sources */,
 				55674BDB2A7509C300FD0AB7 /* ShoppingListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

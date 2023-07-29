@@ -27,7 +27,7 @@ final class ShoppingListTableViewCell: UITableViewCell {
         didSet {
             guard let shoppingList else {return}
             checkBoxButton.setImage(
-                UIImage(systemName: shoppingList.isChecked ? "checkmark.square" : "square"),
+                UIImage(systemName: shoppingList.isChecked ? "checkmark.square.fill" : "square"),
                 for: .normal
             )
             importantButton.setImage(
