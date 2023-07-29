@@ -8,6 +8,7 @@
 import Foundation
 
 
+/// 쇼핑 리스트
 struct ShoppingList: Codable {
     let listName: String
     var isChecked: Bool
