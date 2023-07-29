@@ -54,12 +54,26 @@ final class ShoppingListTableViewCell: UITableViewCell {
     @IBAction func checkButtonTapped(_ sender: UIButton) {
         UM.shoppingList[row].isChecked.toggle()
         reloadData?()
+        UIView.animate(withDuration: 0.3, animations: {
+            self.checkBoxButton.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        }) { _ in
+            UIView.animate(withDuration: 0.3) {
+                self.checkBoxButton.transform = .identity
+            }
+        }
     }
     
     /// 중요 버튼 선태
     @IBAction func importantButtonTapped(_ sender: UIButton) {
         UM.shoppingList[row].isImportant.toggle()
         reloadData?()
+        UIView.animate(withDuration: 0.3, animations: {
+            self.importantButton.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        }) { _ in
+            UIView.animate(withDuration: 0.3) {
+                self.importantButton.transform = .identity
+            }
+        }
     }
     
 }
